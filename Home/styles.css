@@ -1,0 +1,86 @@
+/* Basic CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  /* Navbar Styles */
+  nav {
+    background-color: #a71883;
+    color: #fff;
+    font-family: "Karla", sans-serif;
+  }
+  
+
+  /* .navbar-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    
+  } */
+  
+  #navbar {
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+    padding: 10px 20px;
+    transition: 0.5s ease-in-out;
+
+  }
+
+  #navbar li {
+    margin-left: 20px;
+    
+  }
+  
+  #navbar li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+  }
+  
+  #navbar li a:hover {
+    color: #ccc;
+  }
+  
+  .hero-header-text {
+    font-family: "Karla", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    max-width: 400px;
+    padding-top: 150px;
+    padding-bottom: 30px;
+    font-size: 50px;
+  }
+
+  .hero-section {
+    padding-left: 40px;
+  }
+
+  .hero-section-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border: none;
+    font-size: 23px;
+  }
+
+  .hero-section-buttons > button {
+    font-size: larger;
+    background-color: transparent;
+    border: 1px solid #000;
+    border-radius: 12px;
+    padding: 10px 20px;
+    font-family: "Karla", sans-serif;
+    cursor: pointer;
+  }
+
+ 
