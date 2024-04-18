@@ -60,8 +60,17 @@
     font-size: 50px;
   }
 
+  .hero-header-text > span {
+    color: #a71883;
+  }
+
+  .hero-p-text {
+    font-size: 23px;
+  }
+  
   .hero-section {
     padding-left: 40px;
+    display: flex;
   }
 
   .hero-section-buttons {
@@ -71,6 +80,10 @@
     gap: 20px;
     border: none;
     font-size: 23px;
+    margin-top: 20px; /* Adjust margin as needed */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    padding-left: 350px;
+   
   }
 
   .hero-section-buttons > button {
@@ -81,6 +94,15 @@
     padding: 10px 20px;
     font-family: "Karla", sans-serif;
     cursor: pointer;
+    background-size: 200% auto; /* Larger background size for animation */
+    font-weight: 500;
   }
 
+
+  .hero-section-buttons > button:hover {
+    background-image: linear-gradient(to right, #F72585, #a71883);
+    transition: background-position 0.3s; /* Smooth transition for background position */
+    background-position: right center; /* Change background position on hover */ 
  
+  
+  }
