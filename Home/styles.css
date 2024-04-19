@@ -10,99 +10,210 @@
   }
   
   /* Navbar Styles */
-  nav {
-    background-color: #a71883;
-    color: #fff;
-    font-family: "Karla", sans-serif;
-  }
-  
+  /* Navbar Styles */
+nav {
+  position: fixed; /* Make the navbar sticky */
+  top: 0; /* Position it at the top */
+  width: 100%; /* Take the full width of the viewport */
+  background-color: #a71883;
+  color: #fff;
+  font-family: "Karla", sans-serif;
+  z-index: 1000; /* Ensure the navbar stays on top of other content */
+}
 
-  /* .navbar-header {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 20px;
-    
-  } */
-  
-  #navbar {
-    display: flex;
-    justify-content: flex-end;
-    list-style-type: none;
-    padding: 10px 20px;
-    transition: 0.5s ease-in-out;
+#navbar {
+  display: flex;
+  justify-content: flex-end;
+  list-style-type: none;
+  padding: 20px 20px;
+  transition: 0.5s ease-in-out;
+}
 
-  }
+#navbar li {
+  margin-left: 20px;
+}
 
-  #navbar li {
-    margin-left: 20px;
-    
-  }
-  
-  #navbar li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.2rem;
-    transition: color 0.3s;
-  }
-  
-  #navbar li a:hover {
-    color: #ccc;
-  }
-  
-  .hero-header-text {
-    font-family: "Karla", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: bold;
-    font-style: normal;
-    max-width: 400px;
-    padding-top: 150px;
-    padding-bottom: 30px;
-    font-size: 50px;
-  }
+#navbar li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: color 0.3s;
+}
 
-  .hero-header-text > span {
-    color: #a71883;
-  }
+#navbar li a:hover {
+  color: #ccc;
+}
 
-  .hero-p-text {
-    font-size: 23px;
-  }
-  
+/* Adjust the content padding to avoid overlap */
+/* Assuming the content has a class of 'content' */
+.content {
+  padding-top: 60px; /* Adjust according to the navbar height */
+}
+
+/* Default styles */
+
+.hero-header-text {
+  font-family: "Karla", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+  max-width: 400px;
+  padding-top: 150px;
+  padding-bottom: 30px;
+  font-size: 50px;
+}
+
+.hero-header-text > span {
+  color: #a71883;
+}
+
+.hero-p-text {
+  font-size: 23px;
+}
+
+.hero-section {
+  padding-left: 40px;
+  display: flex;
+}
+
+.hero-section-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  border: none;
+  font-size: 23px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+  padding-left: 350px;
+}
+
+.login-btn {
+  background: #f72585;
+}
+
+.hero-section-buttons > button {
+  font-size: larger;
+  border: 1px solid #f72585;
+  border-radius: 22px;
+  padding: 10px 20px;
+  font-family: "Space Grotesk", sans-serif;
+  cursor: pointer;
+  background-size: 200% auto;
+  font-weight: 500;
+}
+
+.signup-btn {
+  border: 1px solid #f72585;
+  background: transparent;
+}
+
+.hero-section-buttons > button:hover {
+  background-image: linear-gradient(to right, #f72585, #a71883);
+  transition: background-position 0.3s;
+  background-position: right center;
+}
+
+/* Responsive adjustments */
+
+@media screen and (max-width: 768px) {
   .hero-section {
-    padding-left: 40px;
-    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .hero-section-buttons {
+    padding-left: 0;
+  }
+}
+
+
+
+
+
+  /* CODE FOR NEW CSS SECTION 2 --- FOR THE CARDS */
+
+  .section-container {
+    margin-top: 100px;
+  }
+  
+  .section-container > h2 {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 28px;
+    margin-bottom: 32px;
+  }
+  
+  .card-h1 > span {
+    color: #a71883;
+  }
+
+  .card-section {
     display: flex;
     justify-content: center;
-    align-items: center;
     gap: 20px;
-    border: none;
-    font-size: 23px;
-    margin-top: 20px; /* Adjust margin as needed */
-    flex-wrap: wrap; /* Allow wrapping for smaller screens */
-    padding-left: 350px;
-   
+    flex-wrap: wrap;
   }
-
-  .hero-section-buttons > button {
-    font-size: larger;
-    background-color: transparent;
-    border: 1px solid #000;
-    border-radius: 12px;
-    padding: 10px 20px;
-    font-family: "Karla", sans-serif;
-    cursor: pointer;
-    background-size: 200% auto; /* Larger background size for animation */
-    font-weight: 500;
-  }
-
-
-  .hero-section-buttons > button:hover {
-    background-image: linear-gradient(to right, #F72585, #a71883);
-    transition: background-position 0.3s; /* Smooth transition for background position */
-    background-position: right center; /* Change background position on hover */ 
- 
   
+  .card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    width: 300px;
+    font-family: "Space Grotesk", sans-serif;
+  }
+  
+  .card h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .card img {
+    width: 100%;
+    height: 50%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .card p {
+    font-size: 16px;
+    color: #555;
+  }
+
+  .card-btn {
+    font-size: 16px;
+    border: 1px solid #f72585;
+    padding: 8px 7px;
+    margin-top: 15px;
+    font-family: "Space Grotesk", sans-serif;
+    cursor: pointer;
+    background-color: #F72585;
+    color: #fff;
+  }
+
+  .card-btn:hover {
+    background-color: #7209B7;
+    border: 1px solid #7209B7;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .section-container > h2 {
+      font-size: 24px;
+      margin-bottom: 24px;
+    }
+  
+    .card {
+      width: calc(50% - 10px);
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .section-container > h2 {
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+  
+    .card {
+      width: calc(100% - 20px);
+    }
   }
