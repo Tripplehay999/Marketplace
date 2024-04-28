@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/f939e23986.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="index.js"></script>
     <title>MarketPlace</title>
 </head>
@@ -22,36 +24,39 @@
 
 <div class="container">
   <div class="hero-section">
-    <div class="hero-texts">
-      <h1 class="hero-header-text">All your <span>sales</span>, reports, <span>products</span> all in one place.</h1>
-      <p class="hero-p-text">Get the reports and a complete analysis, payments,<br> tax files of all your products across Vyne </p>
-    </div>
+
+    <div class="hero-texts" data-aos="fade-up" data-aos-once="false" data-aos-delay="50">
+      <h1 class="hero-header-text" data-aos="fade-up">All your <span>sales</span>, reports, <span>products</span> all in one place.</h1>
+      <p class="hero-p-text" data-aos="fade-up">Get the reports and a complete analysis, payments,<br> tax files of all your products across Vyne </p>
+       </div>
       
-      <div class="hero-section-buttons">
-          <button class="signup-btn">Get Started</button>
-          <button class="login-btn">Login</button>
+       
+   
+      <div class="hero-section-buttons" data-aos="fade-up" data-aos-once="false" data-aos-delay="50">
+          <button class="signup-btn"> <a href="#">Get Started</a> </button>
+          <button class="login-btn"><a href="../Login/login.html" target="_blank">Login <i class="fa-solid fa-right-to-bracket" style="color: #ffffff;"></i></a></button>
+         
       </div>
-      
   </div>
 
-  <div class="section-container">
+  <div class="section-container" data-aos="fade-up">
     <h2 class="card-h1"><span>What</span> can I do on MarketPlace</h2>
     <section class="card-section">
-      <div class="card">
+      <div class="card" data-aos="fade-left" data-aos-once="false" data-aos-delay="50">
         <img src="../images/MarketPlace.png" alt="Image 1">
         <h2>Card 1</h2>
         <p>This is the description for card 1.</p>
         <button class="card-btn"> Trending products →</button>
       </div>
   
-      <div class="card">
+      <div class="card" data-aos="fade-up" data-aos-once="false" data-aos-delay="50">
         <img src="../images/card2.jpg" alt="Image 2">
         <h2>Card 2</h2>
         <p>This is the description for card 2.</p>
         <button class="card-btn"> Trending products →</button>
       </div>
   
-      <div class="card">
+      <div class="card" data-aos="fade-right" data-aos-once="false" data-aos-delay="50">
         <img src="../images/card3.jpg" alt="Image 2">
         <h2>Card 2</h2>
         <p>This is the description for card 2.</p>
@@ -62,7 +67,43 @@
   
   </section>
 
-  <h1>End of Section</h1>
+
+  <section class="banner-section" data-aos="slide-in" data-aos-once="false" data-aos-delay="50">
+    <div class="banner-div">
+      <img src="../images/banner.png" alt="Banner Image" class="banner-img"/>
+    </div>
+  </section>
+
+
+  <section>
+    <div class="howitworks-container"> 
+      <h2 class="howitworks-title">How it works<i class="far fa-question-circle"></i></h2>
+      <div class="steps-container">
+        <div class="step">
+          <h3>Step 1: Sign Up / Login</h3>
+          <i class="fa-solid fa-user-plus" style="color: #ffffff;"></i>
+        </div>
+
+        <div class="step">
+          <h3>Step 2: Set up your Seller Profile</h3>
+         
+        </div>
+
+        <div class="step">
+          <h3>Step 3: Upload your Products</h3>
+          <img src="../images/SignUp.png">
+        </div>
+
+        <div class="step">
+          <h3>Step 3: Sell & control your items</h3>
+          <img src="../images/SignUp.png">
+        </div>
+    </div>
+  </section>
 </div>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </body>
 </html>

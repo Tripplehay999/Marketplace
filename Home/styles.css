@@ -90,6 +90,7 @@ nav {
 
 .login-btn {
   background: #f72585;
+  color: #fff;
 }
 
 .hero-section-buttons > button {
@@ -108,12 +109,21 @@ nav {
   background: transparent;
 }
 
+.signup-btn > a {
+  color: #000;
+  text-decoration: none;
+}
+
 .hero-section-buttons > button:hover {
   background-image: linear-gradient(to right, #f72585, #a71883);
   transition: background-position 0.3s;
   background-position: right center;
 }
 
+.login-btn > a {
+  color: #fff;
+  text-decoration: none;
+}
 /* Responsive adjustments */
 
 @media screen and (max-width: 768px) {
@@ -216,4 +226,14 @@ nav {
     .card {
       width: calc(100% - 20px);
     }
+  }
+
+
+  .banner-img {
+    width: 100%;
+  }
+
+  .banner-div {
+    margin: 20px 10px;
+    border-radius: 5px;
   }
